@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fb;
+  color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#model-select, #new-chat {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#model-select {
+  background: #333;
+  color: white;
+}
+
+#new-chat {
+  background: #007acc;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-list-item {
+  padding: 10px;
+  margin: 5px 0;
+  background: #2d2d2d;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-list-item:hover {
+  background: #444;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.user-msg {
+  font-weight: 600;
+  color: #005a9e;
+}
+
+.ai-msg p {
+  margin: 10px 0;
+}
+
+.code-block {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  position: relative;
+  margin: 10px 0;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #005a9e;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+#prompt-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#send-btn {
+  padding: 12px 20px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background: #005a9e;
+}
+
+.file-upload label {
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-right: 10px;
+}
